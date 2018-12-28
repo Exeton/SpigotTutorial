@@ -91,4 +91,18 @@ To do this, we can either pass in an existing varriable, or we can create a new 
 
 ## Adding our main class to our config
 
+Before we can create our jar file, we have to add our main class location to our plugin.yml. This should be all the folders that go upto your main class, and your Main class. For me it's online.fireflower.hello_world.HelloWorld which is package1.package2.MainClassName
 
+Finished config picture
+
+## Building artifacts
+Building artifacts is pretty simple. Click on the build tab, then build articafts >> build.
+
+Pictures
+
+## Challenges
+Remember: Don't stress if you can't get these. Be sure to come back to this project if you can't figure them out. You might need to play around to get these working.
+
+1. (Modify the plugin) Change the message displayed on the Console.
+2. (Modify the plugin) Send the Hello World message 5 times.
+3. (Answer the question) What is the keybind to open the Project Structure GUI?
