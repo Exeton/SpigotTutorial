@@ -32,7 +32,7 @@ It is expected that anyone using this course can install [Intellij](https://www.
 13. SoupPvP Config
 14. SoupPvP MultiWorld
 
-## Section 3
+### Section 3
 15. More commands
 16. Stealth Command
 17. Placeholders command (Challenge)
