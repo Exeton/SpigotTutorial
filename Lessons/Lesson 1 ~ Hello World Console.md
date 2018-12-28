@@ -63,4 +63,32 @@ We'll come back to this file to add the location of our main class.
 
 ## Creating your Main class
 
-To organise classes in java, you can use packages. These are similar to folders. It's common pratice to name packages as your domain name reversed. I own the domain fireflower.online, so my package would be fireflower.online
+To organise classes in java, you can use packages. These are basically folders. It's common pratice to name packages as your domain name reversed. I own the domain fireflower.online, so my package would be fireflower.online. After this, and the project name (HelloWorld). All words in package names should be lower case, and words should be seperated with an underscore. I would call this project online.fireflower.hello_world
+
+After creating your package, create a class called HelloWorld. Class names should start with a capital letter, and every new word in the class name should start with a capital letter. For example the "My sample class name" would be "MySampleClassName".
+
+
+Now you're going to make your class extend java plugin. We'll cover what this means later. If you're getting an error in Intellij, you can press Alt + Enter and then click import class to import the JavaPlugin class.
+After importing the class, add the following code to your Main class (your HelloWorld class).
+
+
+Picture
+
+So what does this mean? There's a lot of new info to take in, but we'll go over the onEnable() method you just added in.
+The onEnable() method has a lot of parts. It starts off with an @Override annotation. We're not going to worry about this. Following that is the keyword public, the keyword void, the method name - onEnable, some parentheses, and then a pair of curly brackets. Here's what all that means.
+
+public - This describes the accessiability of the method. Public methods can be accessed from inside other classes while private methods cannot.
+void - This desribes the return type of the method. Some methods, like an addition method give back numbers. Methods which return void don't return anything.
+onEnable - This is the name of the method. It's used in other parts of the code to invoke the method.
+() - Inside here are where method inputs (paramaters) go. And addition method would take in two numbers as paramaters.
+{} - Inside here is where all the instructions of the method go. Any code inside here will be executed when the method is executed.
+
+Not all of that will make sense right now, but over time all these characteristics will start to make sense.
+
+We've now got most of the code we need in order to run our plugin. The one final thing to do is call Bukkit.getLogger().info(); inside our onEnable method. info (sic) is a method inside of the Logger class. This method takes in a text varriable and displays it to the console.
+
+To do this, we can either pass in an existing varriable, or we can create a new text varriable and pass it in. You can see both methods below.
+
+## Adding our main class to our config
+
+
