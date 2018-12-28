@@ -38,14 +38,29 @@ The first two are very simple. Inside Intellij, press Ctrl + Alt + Shift + S. Cl
 Click on the Artifacts tab. Add a new empty jar. (From dependiceys works too, but you'll have to remove the spigot.jar from output layout). Change the jar name, output path (I recommend to your spigot/plugins folder), and drage the 'Hello World' compile output into your jar.
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Adding%20Artifact.PNG)
-![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
+(https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
 
 
 If your jar does not get created, you messed up a step here. (Check your output path, and that you have 'Hello World' compile output on the left side of your output layer).
 
 Once you're done, click OK.
-Ok Picture
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/OK%20picture.PNG)
 
 ## Creating plugin.yml
 
+To create your plugin.yml file, goto your src folder, right click it, then go new >> File. Name it plugin.yml.
+
+Create file picture
+Not filled picture
+
+
+You might not be able to view this file inside intellij. If you can't, you can open it notepad, or notepad++. Hashtags in this file are comments and won't be parsed by spigot.
+
+Filled picture
+
+
+We'll come back to this file to add the location of our main class.
+
 ## Creating your Main class
+
+To organise classes in java, you can use packages. These are similar to folders. It's common pratice to name packages as your domain name reversed. I own the domain fireflower.online, so my package would be fireflower.online
