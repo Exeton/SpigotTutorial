@@ -38,7 +38,7 @@ The first two are very simple. Inside Intellij, press Ctrl + Alt + Shift + S. Cl
 Click on the Artifacts tab. Add a new empty jar. (From dependiceys works too, but you'll have to remove the spigot.jar from output layout). Change the jar name, output path (I recommend to your spigot/plugins folder), and drage the 'Hello World' compile output into your jar.
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Adding%20Artifact.PNG)
-(https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
 
 
 If your jar does not get created, you messed up a step here. (Check your output path, and that you have 'Hello World' compile output on the left side of your output layer).
@@ -50,14 +50,14 @@ Once you're done, click OK.
 
 To create your plugin.yml file, goto your src folder, right click it, then go new >> File. Name it plugin.yml.
 
-Create file picture
-Not filled picture
-
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20File.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/NameFile.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20empty.PNG)
 
 You might not be able to view this file inside intellij. If you can't, you can open it notepad, or notepad++. Hashtags in this file are comments and won't be parsed by spigot.
+Your plugin.yml needs 5 things: name, authour, description, the location of your main class, version, and version.
 
-Filled picture
-
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20Filled.PNG)
 
 We'll come back to this file to add the location of our main class.
 
@@ -65,14 +65,19 @@ We'll come back to this file to add the location of our main class.
 
 To organise classes in java, you can use packages. These are basically folders. It's common pratice to name packages as your domain name reversed. I own the domain fireflower.online, so my package would be fireflower.online. After this, and the project name (HelloWorld). All words in package names should be lower case, and words should be seperated with an underscore. I would call this project online.fireflower.hello_world
 
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20Package.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Name%20package.PNG)
+
 After creating your package, create a class called HelloWorld. Class names should start with a capital letter, and every new word in the class name should start with a capital letter. For example the "My sample class name" would be "MySampleClassName".
 
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20Java%20class.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Hello%20World%20Class.PNG)
 
 Now you're going to make your class extend java plugin. We'll cover what this means later. If you're getting an error in Intellij, you can press Alt + Enter and then click import class to import the JavaPlugin class.
 After importing the class, add the following code to your Main class (your HelloWorld class).
 
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/HelloWorldCoded.PNG)
 
-Picture
 
 So what does this mean? There's a lot of new info to take in, but we'll go over the onEnable() method you just added in.
 The onEnable() method has a lot of parts. It starts off with an @Override annotation. We're not going to worry about this. Following that is the keyword public, the keyword void, the method name - onEnable, some parentheses, and then a pair of curly brackets. Here's what all that means.
@@ -89,16 +94,22 @@ We've now got most of the code we need in order to run our plugin. The one final
 
 To do this, we can either pass in an existing varriable, or we can create a new text varriable and pass it in. You can see both methods below.
 
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/HelloWorld%20Finished.PNG)
+
 ## Adding our main class to our config
 
 Before we can create our jar file, we have to add our main class location to our plugin.yml. This should be all the folders that go upto your main class, and your Main class. For me it's online.fireflower.hello_world.HelloWorld which is package1.package2.MainClassName
 
-Finished config picture
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Finished%20Config.PNG)
 
 ## Building artifacts
-Building artifacts is pretty simple. Click on the build tab, then build articafts >> build.
+Building artifacts is pretty simple. Click on the build tab, then build articafts >> build. If your artifact isn't getting created, you probably messed up when adding the artifact.
 
-Pictures
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Build%20Artifacts.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Build%20Artifacts%202.PNG)
+
+## Results
+Once you've built your artifacts, you server should display "Hello World" when your plugin is loaded. If Spigot throws an error this could mean a varity of things. For example an InvalidPluginDescription error means that you messed up in your plugin.yml file. Look for the error message and google the error.
 
 ## Challenges
 Remember: Don't stress if you can't get these. Be sure to come back to this project if you can't figure them out. You might need to play around to get these working.
