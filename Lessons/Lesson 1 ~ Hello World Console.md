@@ -111,6 +111,8 @@ Building artifacts is pretty simple. Click on the build tab, then build articaft
 ## Results
 Once you've built your artifacts, you server should display "Hello World" when your plugin is loaded. If Spigot throws an error this could mean a varity of things. For example an InvalidPluginDescription error means that you messed up in your plugin.yml file. Look for the error message and google the error.
 
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Result.PNG)
+
 ## Challenges
 Remember: Don't stress if you can't get these. Be sure to come back to this project if you can't figure them out. You might need to play around to get these working.
 
