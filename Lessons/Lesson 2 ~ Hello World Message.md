@@ -36,7 +36,7 @@ Besides making the event class, there's 3 things you need to do to get your even
 
 Implementing Listener is easy. Simply add "implements Listener" after your class name. This allows Spigot to know your class has an event inside of it. Your class should look like.
 
-Picture
+![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson2/ImplementsListener.PNG)
 
 Now we'll create another method (another set of instructions) to be run when a player joins. All event methods you create will take in one event paramater which'll information about the event. In our case, our method will take in a PlayerJoinEvent object which will store varriables like a player varriable. This method must be labeled with @EventHandler. This tells Spigot that this method is what should be called when a PlayerJoinEvent is fired.
 
@@ -111,7 +111,7 @@ Remember: Your class might not be named HelloWorld. If you change the name of th
 ## Results
 We're done coding. Be sure to build your artifact (Click the build dropdown then Build Artifacts > Build. Your plugin should send you a message when you join the server that says HelloPlayer. If it doesn't, check the debugging section below and try to figure out what you did wrong.
 
-Results picture
+![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson2/Results.PNG)
 
 ## Debuging
 
@@ -120,3 +120,6 @@ If you forget to implement Listener, Spigot will throw an error when your plugin
 If you forget to register the event, the event won't work, but it won't throw an error. </br>
 If you forget to add the annotation, it also won't work or give an error. </br>
 If the code inside of your event throws an error, an error will display every time the event is run. </br>
+
+## Challenges
+[Read - Classes vs Objects](https://www.javatpoint.com/difference-between-object-and-class)
