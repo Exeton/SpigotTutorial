@@ -56,7 +56,7 @@ As you can see, out method takes in a paramater called "paramater". This paramat
 
 Before we add the code to send the player a message, we'll rename our PlayerJoinEvent object from paramater to event so that our code is easier to understand.
 
-```
+```java
 public class OnPlayerJoin implements Listener {
 
     @EventHandler
@@ -70,19 +70,19 @@ public class OnPlayerJoin implements Listener {
 
 To send the Player a message, we'll get a player varriable and then call the sendMessage method. Be to import any new classes (Press alt + enter when hovering over a class that needs to be imported)
 
-```
+```java
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
 
         Player player = event.getPlayer();//Get a player object from our event object
-        player.sendMessage("Hi");
+        player.sendMessage("Hello Player");
 
     }
 ```
 
 Note: We have to use a player object to call player.sendMessage(). For example the following code won't work because we're not refference a specific player.
 
-```
+```java
     //This code won't work
 
     @EventHandler
@@ -91,9 +91,27 @@ Note: We have to use a player object to call player.sendMessage(). For example t
     }
  ```
 
-After adding the player.sendMessage("Hi") code, we need to register our event.
+After adding the player.sendMessage("Hi") code, we need to register our event. We'll register the event inside our Main file in onEnable(). To do this, we'll tell Bukkit's pluginManager to register our event. We'll need to pass in an onPlayerJoin object, and a main class object. Because we're running this code inside of our main class, we can pass our Main class as a paramater into the method using the "this" keyword.
 
+```java
+public class HelloWorld extends JavaPlugin {
 
+    @Override
+    public void onEnable() {
+
+        //Create a plugin manager object. This can be used to register all your events.
+        PluginManager pluginManager = Bukkit.getPluginManager();
+        pluginManager.registerEvents(new OnPlayerJoin(), this);
+    }
+}
+```
+
+Remember: Your class might not be named HelloWorld. If you change the name of the class inside the code, but don't change the file name, Intellij will throw an error. If this is happening, don't copy and paste all the code into your Main class, just the code inside of onEnable().
+
+## Results
+We're done coding. Be sure to build your artifact (Click the build dropdown then Build Artifacts > Build. Your plugin should send you a message when you join the server that says HelloPlayer. If it doesn't, check the debugging section below and try to figure out what you did wrong.
+
+Results picture
 
 ## Debuging
 
