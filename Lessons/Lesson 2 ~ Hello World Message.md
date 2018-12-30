@@ -36,12 +36,64 @@ Besides making the event class, there's 3 things you need to do to get your even
 
 Implementing Listener is easy. Simply add "implements Listener" after your class name. This allows Spigot to know your class has an event inside of it. Your class should look like.
 
-Sample code
+Picture
 
-Now we'll create another method (another set of instructions) to be run when a player joins. All event methods you create will take in one event paramater which'll information about the event. In our case, our method will take in a PlayerJoinEvent object which will store varriables like a player varriable.
+Now we'll create another method (another set of instructions) to be run when a player joins. All event methods you create will take in one event paramater which'll information about the event. In our case, our method will take in a PlayerJoinEvent object which will store varriables like a player varriable. This method must be labeled with @EventHandler. This tells Spigot that this method is what should be called when a PlayerJoinEvent is fired.
+
+```java
+public class OnPlayerJoin implements Listener {
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent paramater){
+
+    }
+    
+}
+
+```
+
+As you can see, out method takes in a paramater called "paramater". This paramater is an object with the type "PlayerJoinEvent". This object will be different every time a player joins the server, or in other words, we'll recieve a new paramater varriable with a new player name, a new join message, etc. On the other hand, the class will remain constant when players join. We'll always recieve a join message variable, a player name variable, etc., just with different values.
+
+Before we add the code to send the player a message, we'll rename our PlayerJoinEvent object from paramater to event so that our code is easier to understand.
+
+```
+public class OnPlayerJoin implements Listener {
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event){
+
+    }
+
+}
+```
 
 
-Talk about objects vs classes.
+To send the Player a message, we'll get a player varriable and then call the sendMessage method. Be to import any new classes (Press alt + enter when hovering over a class that needs to be imported)
+
+```
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event){
+
+        Player player = event.getPlayer();//Get a player object from our event object
+        player.sendMessage("Hi");
+
+    }
+```
+
+Note: We have to use a player object to call player.sendMessage(). For example the following code won't work because we're not refference a specific player.
+
+```
+    //This code won't work
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event){
+        Player.sendMessage("");
+    }
+ ```
+
+After adding the player.sendMessage("Hi") code, we need to register our event.
+
+
 
 ## Debuging
 
