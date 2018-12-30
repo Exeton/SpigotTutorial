@@ -1,6 +1,6 @@
 # Hello World Console
 ## Intro
-This tutorial will show you how to create a Intellij project and setup a spigot plugin. This lessons expects you to have installed Intellij and have a working Spigot server.
+This tutorial will show you how to create an Intellij project and setup a spigot plugin. This lessons expects you to have installed Intellij and have a working Spigot server.
 
 ## Creating a project
 After opening intellij, you'll want to create a new project. You can do that from both inside intellij, and from the welcome to intellij screen.
