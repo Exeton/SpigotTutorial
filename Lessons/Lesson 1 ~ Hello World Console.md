@@ -82,11 +82,11 @@ After importing the class, add the following code to your Main class (your Hello
 So what does this mean? There's a lot of new info to take in, but we'll go over the onEnable() method you just added in.
 The onEnable() method has a lot of parts. It starts off with an @Override annotation. We're not going to worry about this. Following that is the keyword public, the keyword void, the method name - onEnable, some parentheses, and then a pair of curly brackets. Here's what all that means.
 
-public - This describes the accessiability of the method. Public methods can be accessed from inside other classes while private methods cannot.
-void - This desribes the return type of the method. Some methods, like an addition method give back numbers. Methods which return void don't return anything.
-onEnable - This is the name of the method. It's used in other parts of the code to invoke the method.
-() - Inside here are where method inputs (paramaters) go. And addition method would take in two numbers as paramaters.
-{} - Inside here is where all the instructions of the method go. Any code inside here will be executed when the method is executed.
+**public** - This describes the accessiability of the method. Public methods can be accessed from inside other classes while private methods cannot. <br/>
+**void** - This desribes the return type of the method. Some methods, like an addition method give back numbers. Methods which return void don't return anything. <br/>
+**onEnable** - This is the name of the method. It's used in other parts of the code to invoke the method. <br/>
+**()** - Inside here are where method inputs (paramaters) go. And addition method would take in two numbers as paramaters. <br/>
+**{}** - Inside here is where all the instructions of the method go. Any code inside here will be executed when the method is executed. <br/>
 
 Not all of that will make sense right now, but over time all these characteristics will start to make sense.
 
