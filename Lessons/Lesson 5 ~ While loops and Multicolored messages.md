@@ -81,8 +81,7 @@ To do this, we'll change the color code from &6, to a different number everytime
 
 Go ahead and change our current code to display text with color codes 0 - 9 (i.e. &0 to &9). You might need to move where the message variable is in the code.
 <details><summary>Finished Code</summary>
-<p><code>
-    @EventHandler
+<p><code>   
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
 
