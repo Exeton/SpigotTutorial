@@ -13,10 +13,10 @@ It is expected that anyone using this course can install [Intellij](https://www.
 ## Lesson Overview
 
 ### Section 1
-1. Hello World Console
-2. Hello Player
-3. Logging Events
-4. Hello _________
+1. [Hello World Console](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%201%20~%20Hello%20World%20Console.md)
+2. [Hello Player](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%202%20~%20Hello%20World%20Message.md)
+3. [Logging Events](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%203%20~%20Logging%20Events.md)
+4. [Hello _________](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%204%20~%20Hello%20__________.md)
 5. While loops and Multicolored messages
 6. Colored message while loop
 
