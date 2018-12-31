@@ -73,4 +73,4 @@ After finishing your plugin, you should get a message like this when you join yo
 ![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson%204%20Result.PNG)
 
 ## Challenges
-Remake the first plugin from scratch (it should say Hello World when you start up your server). Give it a shot before refferencing the first plugin. It's a lot to remember, so you'll probably need to. Don't forget the 4 parts of setting up a plugin. Be sure to name your package appropriately.
+Remake the first plugin from scratch. It should say Hello World when you start up your server. Give it a shot before refferencing the first lesson. It's a lot to remember, so you'll probably need to look back. Don't forget the 4 parts of setting up a plugin. Be sure to name your package appropriately.
