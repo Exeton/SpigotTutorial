@@ -49,6 +49,7 @@ The resultant code should look like.
 
 <details><summary>Finished Code</summary>
 <p>
+Sample code
 ```java
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
@@ -62,6 +63,7 @@ The resultant code should look like.
         }
     }
 ```
+
 </p>
 </details>
 
