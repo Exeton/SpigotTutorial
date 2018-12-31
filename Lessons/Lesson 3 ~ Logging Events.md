@@ -96,3 +96,5 @@ Remove the if statement, but keep the logging and message being sent to the play
 Now your plugin log two messages when the player joins, and send a message to players that join.
 
 
+## Challenges
+1. Create a new event (you can reffer to lesson 2). It should be an EntityDamagedByEntityEvent. Log "Entity Damaged" to the console every time the event is called.
