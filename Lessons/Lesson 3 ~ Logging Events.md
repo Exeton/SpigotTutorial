@@ -26,7 +26,7 @@ public class HelloWorld extends JavaPlugin {
 ```
 Modify your onPlayerJoin method in your OnPlayerJoin class to the following.
 
-```
+```java
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
