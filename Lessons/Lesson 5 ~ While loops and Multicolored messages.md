@@ -45,21 +45,21 @@ while (i < 10){//Run this code as long as i < 10.
 ```
 
 As you can see, everytime our loop runs, i increases by 1. Eventually i will become equal to 10, and the loop will stop running. If you'd like to challenge yourself, try to use this in your code to send the player 10 messages when they join the server.
-The resultant code should look like.
+The resultant code inside onPlayerJoin should look like.
 
-<details><summary>Finished Code</summary>
-<p><code>
+<details><summary>Finished Code</summary><p>
+```java
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
         String message = ChatColor.translateAlternateColorCodes('&',"&6Hello " + player.getName());
-
         int i = 0;
         while (i < 10){
             player.sendMessage(message);
             i++;
         }
     }
-</code></p>
+```
+</p>
 </details>
 
 
