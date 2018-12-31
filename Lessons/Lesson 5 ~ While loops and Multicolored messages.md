@@ -47,7 +47,9 @@ while (i < 10){//Run this code as long as i < 10.
 As you can see, everytime our loop runs, i increases by 1. Eventually i will become equal to 10, and the loop will stop running. If you'd like to challenge yourself, try to use this in your code to send the player 10 messages when they join the server.
 The resultant code inside onPlayerJoin should look like.
 
-<details><summary>Finished Code</summary><p>
+<details><summary>Finished Code</summary>
+<p>
+
 ```java
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
@@ -59,6 +61,7 @@ The resultant code inside onPlayerJoin should look like.
         }
     }
 ```
+
 </p>
 </details>
 
@@ -79,8 +82,12 @@ To do this, we'll change the color code from &6, to a different number everytime
 ```
 
 Go ahead and change our current code to display text with color codes 0 - 9 (i.e. &0 to &9). You might need to move where the message variable is in the code.
+
+
 <details><summary>Finished Code</summary>
-<p><code>   
+<p>
+
+```java
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
 
@@ -91,8 +98,10 @@ Go ahead and change our current code to display text with color codes 0 - 9 (i.e
             i++;
         }
     }
-</code></p>
+```
+</p>
 </details>
+
 
 ## Result
 ![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson%205%20Result.PNG)
