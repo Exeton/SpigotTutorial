@@ -49,7 +49,6 @@ The resultant code should look like.
 
 <details><summary>Finished Code</summary>
 <p><code>
-        @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
         String message = ChatColor.translateAlternateColorCodes('&',"&6Hello " + player.getName());
