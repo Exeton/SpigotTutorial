@@ -48,10 +48,8 @@ As you can see, everytime our loop runs, i increases by 1. Eventually i will bec
 The resultant code should look like.
 
 <details><summary>Finished Code</summary>
-<p>
-Sample code
-```java
-    @EventHandler
+<p><code>
+        @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();//Get the player variable stored inside our event
         String message = ChatColor.translateAlternateColorCodes('&',"&6Hello " + player.getName());
@@ -62,10 +60,10 @@ Sample code
             i++;
         }
     }
-```
-
-</p>
+</code></p>
 </details>
+
+
 
 Now we can spam players when they join our server, but it looks pretty boring.
 ![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson%205%20OneColor.PNG)
