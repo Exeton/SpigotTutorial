@@ -19,10 +19,10 @@ It is expected that anyone using this course can install [Intellij](https://www.
 4. [Hello _________](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%204%20~%20Hello%20__________.md)
 5. [While loops and Multicolored messages](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%205%20~%20While%20loops%20and%20Multicolored%20messages.md)
 6. [Randomizing Message Colors](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%206%20~%20Randomizing%20Message%20Colors.md)
-7. [Lightning Sword Challenge]()
-8. [Bow Teleport Challenge]()
+7. [Lightning Sword Challenge]
+8. [Bow Teleport Challenge]
 9. [Configs and Selecting Colors](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%206.5%20~%20Configs%20and%20Selecting%20Colors.md)
-10. [EzRename]()
+10. [EzRename]
 
 
 ### Section 2
