@@ -38,7 +38,7 @@ We'll use the static method Integer.toHexString() to convert i into a hexadecima
 
 Our plugin should now display all colors.
 
-Picture
+![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson6%20All%20colors.PNG)
 
 Now we're going to introduce a random number to decide what color our message is. We'll also change the number of times the message is sent, and store this in a variable. This will allow us to modify the amount of times the messages are sent with a config file in the future.
 
@@ -69,7 +69,7 @@ public class OnPlayerJoin implements Listener {
 I also changed the string which stores our color code to colorCode. This reflects the change in our code from basing the colorCode from the itteration number of the while loop to a random value.
 When we join the server, we should see something like this.
 
-Random colors picture.
+![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson%206%20Random%20Colors.PNG)
 
 I dislike the fact that red was used twice, so we'll add a feature to prevent duplicate colors. We can do this by by keeping track of all the colors we've used, and prevent any color we've already used from being used again.
 To do this, we'll use a List. Read **Section 1** (Overview of List collection) on [Codejava](https://www.codejava.net/java-core/collections/java-list-collection-tutorial-and-examples)
@@ -143,7 +143,7 @@ We also need to add the color code to the list of used color codes.
 
 This should prevent repeats. Our join messages should look like this.
 
-Random No dups Picture.
+![alttext](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson4-6/Lesson6%20RandomNoDups.PNG)
 
 ## Challenges
 
