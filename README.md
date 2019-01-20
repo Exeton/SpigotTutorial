@@ -1,16 +1,19 @@
 # SpigotTutorial
 
-## Intro
-This is a tutorial designed to teach new programmers how to use spigot. This course is made to be difficult (and require a lot of thinking by the user), and is aimed at teaching ideas of programming so some lessons can be skipped if the course is too slow for you. It is still recommended you skim any lessons you skip because they might contain implementation details needed to use a certain part of the Spigot API.
+## Course Info
 
-## Maxamizing Learning
-In order to learn the most from this course, you should complete all challenges. Be sure to revist any challenges you cannot complete. You might also want to revist prior lessons. Be sure to stay hydrated while coding :P
+* This course is for new programmers looking to make spigot plugins
+* This course is meant to be challenging
+* Feel free to skip or skim lessons
+* Complete all challenges. Revisit old ones you missed
+
+## Before Starting this course
+Note: These links are not tutorial videos.
+* [Install Intellij](https://www.jetbrains.com/idea/)
+* [Setup a Spigot Server](https://www.spigotmc.org/)
 
 
-## Setup
-It is expected that anyone using this course can install [Intellij](https://www.jetbrains.com/idea/) and setup a [Spigot](https://www.spigotmc.org/) server using the build tools. You should be able to run your spigot server.
-
-## Lesson Overview
+## Lessons
 
 ### Section 1: Your first Plugin
 1. [Hello World Console](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%201%20~%20Hello%20World%20Console.md)
