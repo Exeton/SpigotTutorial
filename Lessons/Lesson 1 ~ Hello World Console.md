@@ -85,7 +85,7 @@ To create your plugin.yml file, goto your src folder, right click it, then go ne
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/NameFile.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20empty.PNG)
 
-<details>
+</details>
   
 Your plugin.yml needs 5 things (Note using spaces in some fields will cause an error):
 * name
