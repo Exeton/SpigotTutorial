@@ -6,7 +6,7 @@
 ## Creating a project
 After opening intellij, you'll want to create a new project. You can do that from both inside intellij, and from the welcome to intellij screen.
 
-<details><summary>Pictures</summary>
+<details><summary>Picture Instructions</summary>
 ### Step 1 - From the Intellij window
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project.PNG)
 
@@ -23,7 +23,7 @@ After clicking next twice, you should arive at the New project window. Name your
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Name%20Project.PNG)
 </details>
 
-<details><summary>GIF</summary>
+<details><summary>GIF Instructions</summary>
 
 Gif
 
@@ -31,8 +31,7 @@ Gif
   
  
 
-### Result
-After creating your project, Intellij's main window will open.
+After following the project creation instructions, Intellij's main window will open.
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Main%20Window.PNG)
 
 ## The Four Parts of a Spigot plugin
