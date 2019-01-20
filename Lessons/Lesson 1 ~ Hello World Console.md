@@ -1,18 +1,27 @@
 # Hello World Console
-## Intro
-This tutorial will show you how to create an Intellij project and setup a spigot plugin. This lessons expects you to have installed Intellij and have a working Spigot server.
+## What You'll Learn
+* How to create an Intellij project
+* The four steps of plugin creation
 
 ## Creating a project
 After opening intellij, you'll want to create a new project. You can do that from both inside intellij, and from the welcome to intellij screen.
 
+### Step 1 - From to Intellij window
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project.PNG)
+
+### Step 1 - Inside Intellij
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project%202.PNG)
 
+### Step 2
 A GUI (like shown below) will open. You'll want to select java project, click next, click next, and name your project before clicking finish.
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Project%20Type.PNG)
+
+### Step 3
+After clicking next twice, you should arive at the New project window. Name your project HelloWorld.
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Name%20Project.PNG)
 
+### Result
 After creating your project, Intellij's main window will open.
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Main%20Window.PNG)
 
