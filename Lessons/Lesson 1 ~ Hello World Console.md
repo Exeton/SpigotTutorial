@@ -4,7 +4,6 @@
 * The four steps of plugin creation
 
 ## Creating a project
-After opening intellij, you'll want to create a new project. You can do that from both inside intellij, and from the welcome to intellij screen.
 
 <details><summary>Picture Instructions</summary>
 ### Step 1 - From the Intellij window
@@ -23,6 +22,8 @@ After clicking next twice, you should arive at the New project window. Name your
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Name%20Project.PNG)
 </details>
 
+<br>
+
 <details><summary>GIF Instructions</summary>
 
 Note: If you're inside Intellij's main window, you'll need to click File>>New>>Project as seen in Step 1 of the picture instructions.
@@ -30,10 +31,10 @@ Note: If you're inside Intellij's main window, you'll need to click File>>New>>P
 
 </details>
   
- 
+ <br>
 
 After following the project creation instructions, Intellij's main window will open.
-<br>
+
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Main%20Window.PNG)
 
 ## The Four Parts of a Spigot plugin
