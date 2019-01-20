@@ -6,6 +6,7 @@
 ## Creating a project
 
 <details><summary>Picture Instructions</summary>
+  
 ### Step 1 - From the Intellij window
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project.PNG)
 
@@ -49,15 +50,17 @@ In order to create a spigot plugin, you need to do four things.
 ## Adding Spigot
 
 The first two are very simple. Inside Intellij, press Ctrl + Alt + Shift + S. Click on the libaries tab, then the +.
-
+<details><summary>Pictures</summary>
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Project%20Structure%20Window.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Java%20Libary.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Spigot%20lib.PNG)
 
+</details>
 ## Creating an Artifact
 
 Click on the Artifacts tab. Add a new empty jar. (From dependiceys works too, but you'll have to remove the spigot.jar from output layout). Change the jar name, output path (I recommend to your spigot/plugins folder), and drage the 'Hello World' compile output into your jar.
 
+<details><summary>Pictures</summary>
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Adding%20Artifact.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
 
@@ -66,17 +69,26 @@ If your jar does not get created, you messed up a step here. (Check your output 
 
 Once you're done, click OK.
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/OK%20picture.PNG)
-
+<details>
+  
 ## Creating plugin.yml
 
 To create your plugin.yml file, goto your src folder, right click it, then go new >> File. Name it plugin.yml.
 
+<details><summary>Pictures</summary>
+  
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20File.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/NameFile.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20empty.PNG)
 
-You might not be able to view this file inside intellij. If you can't, you can open it notepad, or notepad++. Hashtags in this file are comments and won't be parsed by spigot.
-Your plugin.yml needs 5 things: name, authour, description, the location of your main class, version, and version.
+<details>
+  
+Your plugin.yml needs 5 things (Note using spaces in some fields will cause an error):
+* name
+* authour
+* description
+* location of your main class
+* version.
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20Filled.PNG)
 
