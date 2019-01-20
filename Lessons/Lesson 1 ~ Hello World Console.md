@@ -73,7 +73,7 @@ If your jar does not get created, you messed up a step here. (Check your output 
 
 Once you're done, click OK.
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/OK%20picture.PNG)
-<details>
+</details>
   
 ## Creating plugin.yml
 
