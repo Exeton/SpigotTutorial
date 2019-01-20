@@ -6,10 +6,10 @@
 ## Creating a project
 After opening intellij, you'll want to create a new project. You can do that from both inside intellij, and from the welcome to intellij screen.
 
-### Step 1 - From to Intellij window
+### Step 1 - From the Intellij window
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project.PNG)
 
-### Step 1 - Inside Intellij
+### Step 1 - From Inside Intellij
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Create%20Project%202.PNG)
 
 ### Step 2
