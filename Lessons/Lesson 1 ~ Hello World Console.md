@@ -25,13 +25,15 @@ After clicking next twice, you should arive at the New project window. Name your
 
 <details><summary>GIF Instructions</summary>
 
-Gif
+Note: If you're inside Intellij's main window, you'll need to click File>>New>>Project as seen in Step 1 of the picture instructions.
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Project%20Creation.gif)
 
 </details>
   
  
 
 After following the project creation instructions, Intellij's main window will open.
+<br>
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Main%20Window.PNG)
 
 ## The Four Parts of a Spigot plugin
