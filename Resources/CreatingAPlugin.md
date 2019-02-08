@@ -1,13 +1,14 @@
 # CreatingAPlugin
 
 ## Intro
-Getting started with spigot is very easy. Simply open Intellij, and follow these 5 steps.
+Getting started with spigot is very easy. Simply open Intellij, and follow these 6 steps.
 
 1. [Create a project](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#creating-a-project)
 2. [Tell Intellij where your spigot.jar is](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-your-spigotjar-is)
 3. [Tell Intellij where to put your finished plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin)
-4. [Create your Main class](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-main-class) (classes are places where you can put code)
-5. [Create your plugin.yml](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-pluginyml) (a file containing information like the name and version of your plugin)
+4. Create a Package
+5. [Create your Main class](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-main-class) (classes are places where you can put code)
+6. [Create your plugin.yml](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-pluginyml) (a file containing information like the name and version of your plugin)
 
 
 ## Creating a project
@@ -40,6 +41,8 @@ This step is very easy. Press Ctrl + Alt + Shift + S simultaneously to open the 
 <br>
 Note: Adding Libaries allows you to use other peoples code. For example, using World Edit as a libary allows you to reuse WorldEdit's code for copy and pasting regions in your own code. In our case, we'll be adding Spigot.jar as a libary, this will allow us to use Spigot's code for features like sending player's messages.
 
+<br>
+
 <details><summary>Adding Libary Pictures</summary>
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Project%20Structure%20Window.PNG)
@@ -68,6 +71,21 @@ If you don't drag and drop the compile output onto the jar file (see step 3), yo
 
 </details>
 
+## Create a Package
+
+Packages are like folders on your computer. They allow you to keep similar classes together which is very important for larger projects. Packages are also used to distinguish classes with the same name. For example, if you want to refference a class from Spigot, which has the same name as a class from another project, you can let Intellij (and Java) know which one you want to use, by telling it the correct package name. For this reason, all code you write should be inside of packages.
+
+When naming packages, packages should be 
+1. All lower case
+2. Underscores should be used to seperate words
+3. If you own a domain (I own fireflower.online), you should name your package your domain reversed. My packages all start with online.fireflower
+
+<br>
+
+You can find more information [here](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html).
+
+#### Creating packages in Intellij
+Creating packages in Intellij is simple. On the left side of your Intellij IDE
 
 ## Create your Main class
 
