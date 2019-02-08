@@ -3,7 +3,7 @@
 ## Intro
 Getting started with spigot is very easy. Simply open Intellij, and follow these 5 steps.
 
-1. ![Create a project](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#creating-a-project)
+1. [Create a project](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#creating-a-project)
 2. [Tell Intellij where your spigot.jar is](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-your-spigotjar-is)
 3. [Tell Intellij where to put your finished plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin)
 4. [Create your Main class](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-main-class) (classes are places where you can put code)
