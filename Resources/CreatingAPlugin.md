@@ -50,3 +50,29 @@ Note: Adding Libaries allows you to use other peoples code. For example, using W
 
 
 ## Tell Intellij where to put your finished plugin
+
+Click on the Artifacts tab. Click the +, then JAR, then empty. 
+
+You'll have a lot of options to configure your JAR (or the file that's outputted).
+
+1. Name: You're able to change the name of your jar file in the name area.
+2. Output Directory: You can change where your jar gets placed every time you build your plugin. I like to make the output directory my plugins folder, so I don't have to constantly keep moving my jar every time I want to test something in the plugin.
+3. Output Layer: You might also notice an area where it has your jar and a bunch of avaiable elements. Each element on the left side (underneath your jar) will be put inside the jar when you build your plugin. Generally the only element you'll need inside your jar will be "ProjectName compile output". You'll need to drag and drop this element onto your jar, otherwise your code won't be put into the jar.
+
+If you don't drag and drop the compile output onto the jar file (see step 3), your Jar file won't be created. Once you've finished creating configuring your jar settings, click done.
+
+<details><summary>Creating an Artifact</summary>
+
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Adding%20Artifact.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Artifact%20Creation.PNG)
+
+</details>
+
+
+## Create your Main class
+
+
+## Create your plugin.yml
+
+
+
