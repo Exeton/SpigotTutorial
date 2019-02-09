@@ -38,14 +38,14 @@ A new window will now open. On the first page select the Java Project type. Clic
 <br>
 
 ## Tell Intellij where your spigot.jar is
-This step is very easy. Press Ctrl + Alt + Shift + S simultaneously to open the Project Structure Window. Click the Libaries tab in this window, and then click the + to add a new libary. 
+This step is very easy. Press Ctrl + Alt + Shift + S simultaneously to open the Project Structure Window. Click the Libraries tab in this window, and then click the + to add a new library. 
 
 <br>
-Note: Adding Libaries allows you to use other peoples code. For example, using World Edit as a libary allows you to reuse WorldEdit's code for copy and pasting regions in your own code. In our case, we'll be adding Spigot.jar as a libary, this will allow us to use Spigot's code for features like sending player's messages.
+Note: Adding Libraries allows you to use other people's code. For example, using World Edit as a library allows you to reuse WorldEdit's code for copy and pasting regions in your own code. In our case, we'll be adding Spigot.jar as a library, this will allow us to use Spigot's code for features like sending player's messages.
 
 <br>
 
-<details><summary>Adding Libary Pictures</summary>
+<details><summary>Adding Libraries Pictures</summary>
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Project%20Structure%20Window.PNG)
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1/Java%20Libary.PNG)
@@ -63,7 +63,7 @@ You'll have a lot of options to configure your JAR (or the file that's outputted
 
 1. Name: You're able to change the name of your jar file in the name area.
 2. Output Directory: You can change where your jar gets placed every time you build your plugin. I like to make the output directory my plugins folder, so I don't have to constantly keep moving my jar every time I want to test something in the plugin.
-3. Output Layer: You might also notice an area where it has your jar and a bunch of avaiable elements. Each element on the left side (underneath your jar) will be put inside the jar when you build your plugin. Generally the only element you'll need inside your jar will be "ProjectName compile output". You'll need to drag and drop this element onto your jar, otherwise your code won't be put into the jar.
+3. Output Layer: You might also notice an area where it has your jar and a bunch of available elements. Each element on the left side (underneath your jar) will be put inside the jar when you build your plugin. Generally the only element you'll need inside your jar will be "ProjectName compile output". You'll need to drag and drop this element onto your jar, otherwise your code won't be put into the jar.
 
 If you don't drag and drop the compile output onto the jar file (see step 3), your Jar file won't be created. Once you've finished creating configuring your jar settings, click done.
 
@@ -78,11 +78,11 @@ If you don't drag and drop the compile output onto the jar file (see step 3), yo
 
 ## Create a Package
 
-Packages are like folders on your computer. They allow you to keep similar classes together which is very important for larger projects. Packages are also used to distinguish classes with the same name. For example, if you want to refference a class from Spigot, which has the same name as a class from another project, you can let Intellij (and Java) know which one you want to use, by telling it the correct package name. For this reason, all code you write should be inside of packages.
+Packages are like folders on your computer. They allow you to keep similar classes together which is very important for larger projects. Packages are also used to distinguish classes with the same name. For example, if you want to reference a class from Spigot, which has the same name as a class from another project, you can let Intellij (and Java) know which one you want to use, by telling it the correct package name. For this reason, all code you write should be inside of packages.
 
 When naming packages, packages should be 
 1. All lower case
-2. Underscores should be used to seperate words
+2. Underscores should be used to separate words
 3. If you own a domain (I own fireflower.online), you should name your package your domain reversed. My packages all start with online.fireflower
 
 <br>
@@ -105,7 +105,7 @@ Creating packages in Intellij is simple. Right click your src folder, then hover
 
 [What are classes?](https://docs.oracle.com/javase/tutorial/java/concepts/class.html)
 
-Classes should be named with each word of the name being capatialized. For example "My sample class name" would be "MySampleClassName". You can create a class by right clicking your package and then New > Java Class. 
+Classes should be named with each word of the name being capitalized. For example "My sample class name" would be "MySampleClassName". You can create a class by right clicking your package and then New > Java Class. 
 
 <details><summary>Creating your Main class</summary>
   
@@ -181,7 +181,7 @@ The location of your main class should be the package your main class is in (i.e
 You've finished your first plugin. In future lessons, you'll do things like sending the player messages, and making soup heal people. To ensure you've done everything correctly you'll need to create a jar file, and ensure your plugin loads when you start your server.
 
 #### Create the plugin jar file
-To make the file your server will use, click on the build tab, then build articafts > build. A jar file should be created wherever you specified in the Project Structure window. If you forgot where you told Intellij to build the jar, reopone the Project Structure window (ctrl + alt + shift + s), and click the Artifacts tab. If your artifact isn't getting created, you probably messed up [creating the artifact](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin).
+To make the file your server will use, click on the build tab, then build artifacts > build. A jar file should be created wherever you specified in the Project Structure window. If you forgot where you told Intellij to build the jar, reopen the Project Structure window (ctrl + alt + shift + s), and click the Artifacts tab. If your artifact isn't getting created, you probably messed up [creating the artifact](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin).
 
 <details><summary>Pictures</summary>
   
