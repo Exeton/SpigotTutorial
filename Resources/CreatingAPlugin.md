@@ -10,10 +10,11 @@ Getting started with spigot is very easy. Simply open Intellij, and follow these
 5. [Create your Main class](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-main-class) (classes are places where you can put code)
 6. [Create your plugin.yml](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-pluginyml) (a file containing information like the name and version of your plugin)
 
+<br>
 
 ## Creating a project
 When you're working on a project, Intellij will automatically reopen that project every time you reopen Intellij. This means when you're creating a new project, your Intellij will look like on of the following.
-<br>
+
 
 #### Case A
 If you're in the welcome to Intellij window, simply click "Create New Project"
@@ -34,6 +35,7 @@ A new window will now open. On the first page select the Java Project type. Clic
 
 </details>
 
+<br>
 
 ## Tell Intellij where your spigot.jar is
 This step is very easy. Press Ctrl + Alt + Shift + S simultaneously to open the Project Structure Window. Click the Libaries tab in this window, and then click the + to add a new libary. 
@@ -51,6 +53,7 @@ Note: Adding Libaries allows you to use other peoples code. For example, using W
 
 </details>
 
+<br>
 
 ## Tell Intellij where to put your finished plugin
 
@@ -71,6 +74,8 @@ If you don't drag and drop the compile output onto the jar file (see step 3), yo
 
 </details>
 
+<br>
+
 ## Create a Package
 
 Packages are like folders on your computer. They allow you to keep similar classes together which is very important for larger projects. Packages are also used to distinguish classes with the same name. For example, if you want to refference a class from Spigot, which has the same name as a class from another project, you can let Intellij (and Java) know which one you want to use, by telling it the correct package name. For this reason, all code you write should be inside of packages.
@@ -87,7 +92,12 @@ You can find more information [here](https://docs.oracle.com/javase/tutorial/jav
 #### Creating packages in Intellij
 Creating packages in Intellij is simple. On the left side of your Intellij IDE
 
+<br>
+
 ## Create your Main class
+
+
+<br>
 
 
 ## Create your plugin.yml
