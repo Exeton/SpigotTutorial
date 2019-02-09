@@ -16,6 +16,7 @@ Note: These links are not tutorial videos.
 ## Lessons
 
 ### Section 1: Your first Plugin
+0. [Creating A Plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md)
 1. [Hello World Console](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%201%20~%20Hello%20World%20Console.md)
 2. [Hello Player](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%202%20~%20Hello%20World%20Message.md)
 3. [Logging Events](https://github.com/Exeton/SpigotTutorial/blob/master/Lessons/Lesson%203%20~%20Logging%20Events.md)
