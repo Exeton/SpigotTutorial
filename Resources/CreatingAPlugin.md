@@ -174,6 +174,8 @@ The location of your main class should be the package your main class is in (i.e
 
 ![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Finished%20Config.PNG)
 
+<br>
+
 ## You're done!
 
 You've finished your first plugin. In future lessons, you'll do things like sending the player messages, and making soup heal people. To ensure you've done everything correctly you'll need to create a jar file, and ensure your plugin loads when you start your server.
