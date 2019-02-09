@@ -1,4 +1,4 @@
-# CreatingAPlugin
+# Creating A Plugin
 
 ## Intro
 Getting started with spigot is very easy. Simply open Intellij, and follow these 6 steps.
@@ -6,7 +6,7 @@ Getting started with spigot is very easy. Simply open Intellij, and follow these
 1. [Create a project](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#creating-a-project)
 2. [Tell Intellij where your spigot.jar is](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-your-spigotjar-is)
 3. [Tell Intellij where to put your finished plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin)
-4. Create a Package
+4. [Create a Package](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-a-package)
 5. [Create your Main class](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-main-class) (classes are places where you can put code)
 6. [Create your plugin.yml](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#create-your-pluginyml) (a file containing information like the name and version of your plugin)
 
@@ -90,17 +90,106 @@ When naming packages, packages should be
 You can find more information [here](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html).
 
 #### Creating packages in Intellij
-Creating packages in Intellij is simple. On the left side of your Intellij IDE
+Creating packages in Intellij is simple. Right click your src folder, then hover over new, and click Package.
+
+<details><summary>Creating a package</summary>
+  
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20Package.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Name%20package.PNG)
+
+</details>
 
 <br>
 
 ## Create your Main class
 
+[What are classes?](https://docs.oracle.com/javase/tutorial/java/concepts/class.html)
 
+Classes should be named with each word of the name being capatialized. For example "My sample class name" would be "MySampleClassName". You can create a class by right clicking your package and then New > Java Class. 
+
+<details><summary>Creating your Main class</summary>
+  
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20Package.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Name%20package.PNG)
+
+</details>
+
+We're going to add some code to make the plugin work. We'll go over what the code does in a future lesson. Type "extends JavaPlugin" after your class name. Your class should look like this.
+
+```java
+package online.fireflower.hello_world;
+
+public class HelloWorld extends JavaPlugin {
+
+}
+```
+Hover over JavaPlugin, and press Alt + Enter to import JavaPlugin.
+
+```java
+package online.fireflower.hello_world;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class HelloWorld extends JavaPlugin {
+
+}
+```
+
+Now add the following code to your HelloWorld class. This code is the starting point for making all plugins, and is needed for every plugin you make. The code will be gone over in Lesson 1.
+
+```Java
+package online.fireflower.hello_world;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class HelloWorld extends JavaPlugin {
+    
+    public void onEnable() {
+
+    }
+}
+```
 <br>
-
 
 ## Create your plugin.yml
 
+To create your plugin.yml file, click the src folder, right click it, then go new >> File. Name it plugin.yml.
 
+<details><summary>Pictures</summary>
+  
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Create%20File.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/NameFile.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Plugin.yml%20empty.PNG)
 
+</details>
+
+You'll need to fill in the plugin.yml with 5 things. *Note using spaces in some fields will cause an error*
+* name
+* authour
+* description
+* location of your main class
+* version.
+
+The location of your main class should be the package your main class is in (i.e. online.fireflower.hello_world) + the name of the main class. Capitalization is important.
+
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Finished%20Config.PNG)
+
+## You're done!
+
+You've finished your first plugin. In future lessons, you'll do things like sending the player messages, and making soup heal people. To ensure you've done everything correctly you'll need to create a jar file, and ensure your plugin loads when you start your server.
+
+#### Create the plugin jar file
+To make the file your server will use, click on the build tab, then build articafts > build. A jar file should be created wherever you specified in the Project Structure window. If you forgot where you told Intellij to build the jar, reopone the Project Structure window (ctrl + alt + shift + s), and click the Artifacts tab. If your artifact isn't getting created, you probably messed up [creating the artifact](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md#tell-intellij-where-to-put-your-finished-plugin).
+
+<details><summary>Pictures</summary>
+  
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Build%20Artifacts.PNG)
+![alt text](https://github.com/Exeton/SpigotTutorial/blob/master/LessonPictures/Lesson1Part2/Build%20Artifacts%202.PNG)
+
+</details>
+
+To ensure your plugin is working, restart your spigot server and run /plugins. If your plugin shows up, everything is working. 
+
+If your plugin isn't showing up on the list, make sure your plugin.yml is in the src folder, and not inside one of your packages. You'll have to move the plugin.yml if it's in the wrong spot.
+
+If your plugin is showing up red, make sure there are no spaces in fields inside your plugin.yml. Check your server console for errors.
