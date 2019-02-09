@@ -1,8 +1,22 @@
 # Hello World Console
 
+## How does Spigot work?
+
+
+
 ## public void onEnable()
 
-So what does this mean? There's a lot of new info to take in, but we'll go over the onEnable() method you just added in.
+In the last lesson, you added the onEnable() method to your main class, but what does it mean?
+
+```Java
+    public void onEnable() {
+
+    }
+```
+
+onEnable() is a method, or a series of instructions for your computer to execute.
+
+
 The onEnable() method has a lot of parts. It starts off with an @Override annotation. We're not going to worry about this. Following that is the keyword public, the keyword void, the method name - onEnable, some parentheses, and then a pair of curly brackets. Here's what all that means.
 
 **public** - This describes the accessiability of the method. Public methods can be accessed from inside other classes while private methods cannot. <br/>
