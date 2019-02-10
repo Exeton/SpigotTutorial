@@ -1,6 +1,6 @@
 # Hello World Message
 ## Intro
-This tutorial will show you how to create an event and send messages to players. In this lesson, you will create a new project before we get started.
+This tutorial will show you how to create an event which sends a join message to players. You will create a new project before we get started.
 
 ## Setup
 Create a new project, and create all the files and code needed for plugins. You can review [Creating A Plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md) for any steps you've forgotten. Be sure to reload your server, and make sure your plugin is enabled when you run /plugins.
