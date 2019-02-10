@@ -3,33 +3,27 @@
 This tutorial will show you how to create an event and send messages to players. In this lesson, you will create a new project before we get started.
 
 ## Setup
-For this plugin, you'll need to create a new project named Hello Player using the four steps of plugin creation.
-1. Add Spigot as a libary
-2. Create an artifact (the jar your plugin will create)
-3. Create a plugin.yml
-4. Create your main class
-You will probably need to look back at the first tutorial to remember how to do these steps. Although you can just add code to the last plugin instead of creating a new project, it's good pratice to make a new one.
+Create a new project, and create all the files and code needed for plugins. You can review [Creating A Plugin](https://github.com/Exeton/SpigotTutorial/blob/master/Resources/CreatingAPlugin.md) for any steps you've forgotten. Be sure to reload your server, and make sure your plugin is enabled when you run /plugins.
 
-## Before Coding
-Before we start coding, build your plugin. Then run your server and type /plugins. Ensure that your plugin is Green and on the list of enabled plugins.
-If your plugin isn't green, check the console for errors. Some possible errors include:
-1. Your Main class doesn't extend JavaPlugin
-2. There's an error in your plugin description
+#### Possible Errors
+If your plugin isn't enabled, it might be for any number of reasons.
+
+1. Is a jar being created in the output directory you specified. If it isn't, you might not have moved compile output onto your jar file in the artifacts tab of the project structure window (the window opened with ctrl + alt + shift + s).
+2. Your plugin.yml might have an error, or it might not be in the src folder (and instead might be in a package).
+3. Your Main class doesn't extend JavaPlugin
+4. If it isn't any of those reasons, check your server console for an error. If an error appears, be sure to google it.
 
 ## Coding
-Now that we know your plugin works, we can add an events. Events allow you to execute portions of code whenever something happens. For example
+In the last lesson, we added code to onEnable(). In this lesson, we're going to add code inside events. Note: Events allow you to execute portions of code whenever something happens. For example
 - When a player joins the server
 - When a player dies
 - When an entity damages another entity
 - When a player moves
 - When a player clicks something in their inventory
 
-In our case we're going to use the PlayerJoinEvent, which will provide us information about a player when they join our server.
-The first thing you're going to do is create a new Java class called OnPlayerJoin. It's important not to name this calss OnPlayerJoinEvent because that's the name of the class inside the SpigotAPI that we'll be using. In other words, we'd be creating a class with the same name as a class we're going to be using in our code, which can be confusing.
+In our case we're going to use the PlayerJoinEvent, which will provide us information about a player when they join our server. We can use this information to send players messages whenever they join. To get started, create a new Java class called OnPlayerJoin. It's important not to name this calss OnPlayerJoinEvent because that's the name of the class inside the SpigotAPI which will cause naming conflicts. To elobrate, we'd be creating a class with the same name as a class we're going to be using in our code, which we'll avoid for simplicity's sake.
 
-Pictures of creating class inside the package.
-
-Besides making the event class, there's 3 things you need to do to get your event working.
+There are 3 things we need to do to get this event working.
 1. Implement Listener
 2. Add an @EventHandler annotation above the method that'll be ran by the event.
 3. Register the event
