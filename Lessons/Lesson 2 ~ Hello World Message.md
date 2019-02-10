@@ -74,7 +74,7 @@ To send the Player a message, we'll get a player varriable and then call the sen
     }
 ```
 
-Note: We have to use a player object to call player.sendMessage(). For example the following code won't work because we're not refference a specific player.
+Note: We have to use a player [object](https://docs.oracle.com/javase/tutorial/java/concepts/object.html) to call player.sendMessage(). For example the following code won't work because we're not refference a specific player.
 
 ```java
     //This code won't work
@@ -93,7 +93,7 @@ public class HelloWorld extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        //Create a plugin manager object. This can be used to register all your events.
+        //Set a plugin manager varriable equal to Bukkit.getPluginManager. This varriable can be used to register all your events.
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new OnPlayerJoin(), this);
     }
