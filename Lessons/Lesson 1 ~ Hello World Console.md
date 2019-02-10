@@ -31,7 +31,7 @@ In the last lesson, you added code for the onEnable() method to your main class,
     }
 ```
 
-Note: onEnable() is a method. Methods are places you can put series of instructions for your computer to execute. Be sure to check out [this page](https://mathbits.com/MathBits/Java/Methods/Lesson1.htm).
+Note: onEnable() is a method. Methods are places you can put series of instructions for your computer to execute. Be sure to check out [this page](https://mathbits.com/MathBits/Java/Methods/Lesson1.htm) for more info on methods.
 
 
 The onEnable() method has a lot of parts. It starts off with an @Override annotation. We're not going to worry about this. Following that is the keyword public, the keyword void, the method name - onEnable, some parentheses, and then a pair of curly brackets. Here's what all that means.
